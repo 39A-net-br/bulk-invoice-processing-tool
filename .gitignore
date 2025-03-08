@@ -1,0 +1,8 @@
+*
+
+!*.py
+!.env.example
+!invoices/.gitkeep
+!.gitignore
+!README.md
+!requirements.txt
