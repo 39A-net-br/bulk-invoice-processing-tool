@@ -19,6 +19,16 @@ Apenas quando todas faturas forem processadas a ferramenta irá unificar todos .
 
 O objetivo de separar a execução em batches se resume mais a segurança e um pouco a paralelização. Muitos erros possíveis são tratados e geralmente não vão causar uma falha no batch, porém, ainda pode acontecer. Batches menores garantem que apenas uma pequena parte do processamento seja perdida caso isso ocorra. Porém, batches maiores tendem a processar mais rapidamente, já que quando as faturas terminam de ser submetidas a maioria delas já estará processada e o resultado será obtido rapidamente.
 
+## Como instalar
+
+Caso `python` não funcione nos comandos seguintes, tente com `python3`. Caso ainda assim não funcione, cheque a sua instalação do Python.
+
+```
+python -m venv venv
+. venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
 ## Como usar
 
 A ferramenta é simples, o caminho padrão para as faturas é a pasta `invoices` na raiz da ferramenta. Caso use esta pasta, simplesmente rode `python run.py` para iniciar o processamento. Caso deseje usar outra pasta, altere o caminho no arquivo `run.py` e em seguida rode `python run.py`.
