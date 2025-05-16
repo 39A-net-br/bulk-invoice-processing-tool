@@ -14,7 +14,7 @@ class LIARunner:
         self.base_url = os.getenv("BASE_URL")
         self.username = os.getenv("USERNAME")
         self.password = os.getenv("PASSWORD")
-        self.batch_size = os.getenv("BATCH_SIZE")
+        self.batch_size = int(os.getenv("BATCH_SIZE"))
         self.get_token()
         
         self.run()
